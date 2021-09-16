@@ -13,4 +13,47 @@
 }
 html {
     font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
 }
+ header
+ {
+     position: relative;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     width: 100%;
+     min-width: 320px;
+     height: 334px;
+     text-align: center;
+     background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+ }
+ header img.logo-header {
+     width: 150px;
+     height: 24px;
+     margin-top: 60px;
+     align-self: center;
+ }
+ header div.header-title-container {
+     
+     min-width: 288px;
+     max-width: 900px;
+     width: 90%;
+     height: 218px;
+     margin: 40px auto 0;
+     margi
+     justify-content: center;
+     align-items: center;
+ }
+ header div.header-title-container h1 {
+     font-size: 2.4rem;
+     font-weight: bold;
+     line-height: 2.6rem;
+     color: var(--just-white);
+ }
+ header div.header-title-container p {
+     margin-top: 25px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--soft-orange);
+ }
