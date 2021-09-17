@@ -5,6 +5,8 @@
 --warm-blackish: #282623;
 --off-white: #FAF8F7;
 --just-white: #FFFFFF;
+--grey: #757575;
+--greyish: #808080;
 }
 * {
     box-sizing: border-box;
@@ -14,6 +16,9 @@
 html {
     font-size: 62.5%;
     font-family: 'DM Sans', sans-serif;
+}
+a {
+    text-decoration: none;
 }
  header
  {
@@ -34,15 +39,13 @@ html {
      align-self: center;
  }
  header div.header-title-container {
-     
+    width: 90%;
      min-width: 288px;
      max-width: 900px;
-     width: 90%;
      height: 218px;
-     margin: 40px auto 0;
-     margi
-     justify-content: center;
-     align-items: center;
+     margin-top: 40px;
+     text-align: center;
+     align-self: center;
  }
  header div.header-title-container h1 {
      font-size: 2.4rem;
@@ -57,3 +60,74 @@ html {
     line-height: 1.8rem;
     color: var(--soft-orange);
  }
+ header div.header-title-container a.header-button {
+    /* Posicionamiento */
+    position: absolute;
+    left: calc(50% - 114.5px);
+     top: calc(100%-24px);
+     display: block;
+     /* Modelo de caja */
+     margin-top: 35px;
+     padding: 15px;
+     width: 229px;
+     height: 48px;
+     /* Tipografia */
+     font-weight: bold;
+     font-size: 1.4rem;
+     line-height: 1.8rem;
+     color: var(--warm-black);
+    /* Visuales */
+     background-color: var(--off-white);
+     box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+     border-radius: 5px;
+ }
+ header div .header-button span {
+     display: inline-block;
+     width: 12px;
+     height: 8px;
+     margin-left: px;
+     background-image: url("./assets/icons/down-arrow.svg")
+ }
+ main 
+{
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    background-color: var(--off-white);
+}
+.main-exchange-container {
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.main-exchange-container-title {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.main-exchange-container div.backgroundImg {
+    width: 195px;
+    height: 195px;
+    margin: 0 auto 50px;
+    background-image: url(./assets/img/Bitcoin.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.main-exchange-container-title h2 {
+    margin-bottom: 30px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--warm-black);
+}
+.main-exchange-container-title p {
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    color: var(--grey);
+}
