@@ -208,4 +208,6 @@ a {
     background-position: center;
     background-repeat: no-repeat;
 }
-div.main-currency-table div.currency-table-date
+div.main-currency-table div.currency-table-date {
+    font: 1em sans-serif;
+}
