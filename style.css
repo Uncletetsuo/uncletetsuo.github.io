@@ -132,13 +132,32 @@ a {
     line-height: 1.6rem;
     color: var(--grey);
 }
+.main-tables-container {
+    display: flex;
+    height: 360px;
+    gap: 65px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+.main-tables-container::-webkit-scrollbar {
+    display: none;
+}
 .main-currency-table {
-    width: 70%;
-    min-width: 235px;
+    position: relative;
+    scroll-snap-align: center;
+    width: 80%;
+    min-width: 320px;
     max-width: 500px;
     height: 360px;
-    margin: 0 auto;
+    margin: 10px auto 0;
     font-family:  "Inter", sans-serif;
+}
+.main-table-left {
+    padding-left: 3.5rem;
+}
+.main-table-right {
+    padding-right: 3.5rem;
 }
 .main-currency-table .currency-table-title {
     margin-bottom: 15px;
