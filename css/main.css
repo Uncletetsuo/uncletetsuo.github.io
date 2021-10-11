@@ -211,7 +211,8 @@ footer {
     display: flex;
     align-items: center;
     width: 100%;
-    height: 80px;
+    min-height: 80px;
+    max-height: fit-content;
     background-color: #22272d;
     border-top: 35px solid rgba(157,43,2,1);
     justify-content: center;
