@@ -91,7 +91,7 @@ main.home-main {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
     height: 100%;
-    background-image: url(/github.io/assets/img/background-posts.jpg);
+    background-image: url(./font/cover-photo.jpg);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -169,7 +169,7 @@ main.home-main {
 .blogs-posts-container {
     padding: 0 50px 40px;
     text-align: center;
-    background-image: url(/assets/img/background-posts.jpg);
+    background-image: url(./font/background-posts.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
