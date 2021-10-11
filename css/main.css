@@ -91,7 +91,7 @@ main.home-main {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
     height: 100%;
-    background-image: url(/github.io/assets/img/cover-photo.jpg);
+    background-image: url(/github.io/assets/img/background-posts.jpg);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
