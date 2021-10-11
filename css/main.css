@@ -216,6 +216,7 @@ footer {
     background-color: #22272d;
     border-top: 35px solid rgba(157,43,2,1);
     justify-content: center;
+    text-align: center;
 }
 footer p {
     color: white;
