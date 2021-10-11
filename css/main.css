@@ -219,6 +219,7 @@ footer {
 }
 footer p {
     color: white;
+    width: 95%;
 }
 
 .blogpost-img-container {
