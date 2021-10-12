@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5% ;
+}
+
+body {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
+    justify-content: center;
+    background-color: cornflowerblue;
+}
+canvas {
+    border: 1px solid black;
+    background-color: white;
+    margin: 0 auto;
+}
+.primera-p, .segunda-p {
+    justify-self:center ;
+    align-self: center;
+}
+p {
+    font-size: 1.8rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+input {
+    width: 100%;
+    margin-top: 25px;
+    justify-self: center;
+}
