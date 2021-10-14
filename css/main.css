@@ -280,11 +280,6 @@ footer p {
 .contact-main-container div a {
  border-bottom: 1px solid black;
  }
-
-.contact-main-container .contact-left, .contact-right {
-    text-align: initial;
-    margin-top: 80px;
-}
 .profile-main-container {
     padding: 70px 40px;
     background-color: #e6e9ed;

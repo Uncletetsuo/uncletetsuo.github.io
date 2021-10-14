@@ -14,10 +14,6 @@
     .blogs-posts-container .post-container {
         max-width: 45%;
     }
-    .projects-main-container {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 2fr;
-    }
     .profile-main-container .profile-container {
         display: block;
     }
@@ -39,5 +35,20 @@
     }
     nav .profile-link {
         margin-right: 0;
+    }
+    .profile-main-projects .projects-main-container {
+        max-width: 100%;
+        grid-template-columns: 1fr;
+    }
+    .projects-main-container .project-container{
+        margin: 0 auto;
+        gap: 20px;
+
+    }
+    .project-container:nth-of-type(2) {
+        grid-row: 2;
+    }
+    .project-container:nth-of-type(3) {
+        grid-row: 3;
     }
 }
