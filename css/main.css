@@ -9,6 +9,9 @@ font-family: 'Anton', sans-serif; */
     margin: 0;
     padding: 0;
 }
+body {
+    min-width: 320px;
+}
 html {
     font-family: 'Roboto mono', monospace;
     font-size: 62.5%;
@@ -133,7 +136,7 @@ main.home-main {
 }
 .blogs-news-container {
     background-color: #e6e9ed;
-    width: 100%;
+    width: 100vw;
     padding: 0 50px 40px;
 }
 .blogs-main-news {
@@ -169,11 +172,10 @@ main.home-main {
 .blogs-posts-container {
     padding: 0 50px 40px;
     text-align: center;
-    background-image: url(./font/background-posts.jpg);
+    background-image: url('./font/background-posts.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 .blogs-posts-container h3 {
     color: rgb(255, 255, 255);
@@ -190,7 +192,6 @@ main.home-main {
     padding: 10px 20px 30px;
     max-width: 30%;
     margin: 0 10px 30px;
-    text-align: center; 
     border: 1px solid black;
     text-align: left;
     border-radius: 15px;
@@ -309,7 +310,7 @@ footer p {
 }
 .profile-main-projects {
     padding: 0 50px 40px;
-    background-image: url(./font/background-profile-medium.jpg);
+    background-image: url('./font/background-profile-medium.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
