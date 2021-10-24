@@ -324,6 +324,7 @@ footer p {
     gap: 20px;
 }
 .profile-main-projects .projects-main-container .project-container {
+    display: flow-root;
     max-width: 350px; 
     min-height: 250px;
     border: 1px solid black;
@@ -347,6 +348,7 @@ footer p {
     margin: 0 auto;
 }
 .projects-main-container .project-container a {
+    float: left;
     position: relative;
     left: calc(50% - 56.5px);
     background-color: rgb(124, 55, 70);
