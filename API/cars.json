@@ -1,7 +1,7 @@
 [
   {
     "name": "Toyota Corolla Levin Trueno GT Apex",
-    "image": "/uncletetsuo.github.io/assets/img/TargaSport-Toyota-AE86-Trueno-2.jpg",
+    "image": "./assets/img/TargaSport-Toyota-AE86-Trueno-2.jpg",
     "engine": "1.6L In-line V4",
     "hp": "130 HP",
     "top_speed": "196 Km/h (122 Mph)",
@@ -12,7 +12,7 @@
   },
   {
     "name": "Subaru Impreza",
-    "image": "/uncletetsuo.github.io/assets/img/subaru-impreza-wrx-type-r.jpg",
+    "image": "./assets/img/subaru-impreza-wrx-type-r.jpg",
     "engine": "2L Supercharged V4",
     "hp": "280 HP",
     "top_speed": "250 Km/h (155 Mph)",
@@ -23,7 +23,7 @@
   },
   {
     "name": "Nissan Silvia S13",
-    "image": "/uncletetsuo.github.io/assets/img/maxresdefault.jpg",
+    "image": "./assets/img/maxresdefault.jpg",
     "engine": "1.8L InLine Turbocharged V4",
     "hp": "170 HP",
     "top_speed": "250 Km/h (155 Mph)",
@@ -34,7 +34,7 @@
   },
   {
     "name": "Nissan Sil80",
-    "image": "/uncletetsuo.github.io/assets/img/52011524568_d943ecdab6_h.jpg",
+    "image": "./assets/img/52011524568_d943ecdab6_h.jpg",
     "engine": "2L Turbocharged InLine V4",
     "hp": "200 HP",
     "top_speed": "200 Km/h (124 Mph)",
