@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fleet Kings</title>
+  <link rel="stylesheet" href="/uncletetsuo.github.io/css/styles.css" />
+  <style>
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">INITIAL <strong>D</strong></div>
+    <nav>
+      <a href="#">About Us</a>
+      <a href="#">Fleet</a>
+      <a href="#">Pricing</a>
+      <a href="#">Locations</a>
+    </nav>
+    <button class="contact-button">Contact Us</button>
+  </header>
+
+  <div class="hero">
+    <div class="nav-arrow left-arrow" onclick="prevSlide()">&#10094;</div>
+    <div class="carousel" id="carousel"></div>
+    <div class="nav-arrow right-arrow" onclick="nextSlide()">&#10095;</div>
+  </div>
+
+  <script>
+    let currentIndex = 0;
+
+    async function loadCars() {
+      const carousel = document.getElementById('carousel');
+
+      const fallbackCars = [
+        {
+          name: "Lamborghini Urus",
+          image: "./assets/urus.png",
+          engine: "4.0L Twin-Turbocharged V8",
+          hp: "657 HP",
+          top_speed: "305 Km/h (190 Mph)",
+          drivetrain: "All-Wheel Drive"
+        },
+        {
+          name: "Ferrari F8 Spider",
+          image: "./assets/ferrari.png",
+          engine: "3.9L Twin-Turbo V8",
+          hp: "710 HP",
+          top_speed: "340 Km/h (211 Mph)",
+          drivetrain: "Rear-Wheel Drive"
+        }
+      ];
+
+      let cars;
+      try {
+        const res = await fetch('./API/cars.json');
+        if (!res.ok) throw new Error('Fetch failed');
+        cars = await res.json();
+      } catch (err) {
+        console.warn('Falling back to mock data:', err);
+        cars = fallbackCars;
+      }
+
+      cars.forEach(car => {
+        const slide = document.createElement('div');
+        slide.className = 'car-slide';
+        slide.style.backgroundImage = `url(${car.image})`;
+        slide.innerHTML = `
+          <div class="car-info">
+            <h2>${car.name}</h2>
+            <ul>
+              <li><strong>Engine:</strong> ${car.engine}</li>
+              <li><strong>HP:</strong> ${car.hp}</li>
+              <li><strong>Top Speed:</strong> ${car.top_speed}</li>
+              <li><strong>Drivetrain:</strong> ${car.drivetrain}</li>
+              <li><strong>Year:</strong> ${car.year}</li>
+              <li><strong>Price:</strong> ${car.price}</li>
+            </ul>
+          </div>
+        `;
+        carousel.appendChild(slide);
+      });
+    }
+
+    function updateCarousel() {
+      const carousel = document.getElementById('carousel');
+      carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+
+    function nextSlide() {
+      const slides = document.querySelectorAll('.car-slide');
+      currentIndex = (currentIndex + 1) % slides.length;
+      updateCarousel();
+    }
+
+    function prevSlide() {
+      const slides = document.querySelectorAll('.car-slide');
+      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+      updateCarousel();
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      loadCars().then(updateCarousel);
+    });
+  </script>
+</body>
+</html>
